@@ -9,10 +9,10 @@
         android:id="@+id/nav_home"
         android:name="com.example.turizmoprograma.home.HomeFragment"
         android:label="@string/home"
-        tools:layout="@layout/fragment_home" >
+        tools:layout="@layout/fragment_home">
         <action
             android:id="@+id/action_HomeFragment_to_RoutePlannerFragment"
-            app:destination="@id/nav_route"/>
+            app:destination="@id/nav_route" />
         <action
             android:id="@+id/action_HomeFragment_to_TourismLocationsFragment"
             app:destination="@id/nav_locations" />
@@ -34,10 +34,10 @@
         android:id="@+id/nav_route"
         android:name="com.example.turizmoprograma.route_planner.RoutePlannerFragment"
         android:label="@string/route"
-        tools:layout="@layout/fragment_route_planner" >
+        tools:layout="@layout/fragment_route_planner">
         <action
             android:id="@+id/action_RoutePlannerFragment_to_HomeFragment"
-            app:destination="@id/nav_home"/>
+            app:destination="@id/nav_home" />
         <action
             android:id="@+id/action_RoutePlannerFragment_to_TourismLocationsFragment"
             app:destination="@id/nav_locations" />
@@ -59,10 +59,10 @@
         android:id="@+id/nav_locations"
         android:name="com.example.turizmoprograma.tourism_locations.TourismLocationsFragment"
         android:label="@string/locations"
-        tools:layout="@layout/fragment_tourism_locations" >
+        tools:layout="@layout/fragment_tourism_locations">
         <action
             android:id="@+id/action_TourismLocationsFragment_to_HomeFragment"
-            app:destination="@id/nav_home"/>
+            app:destination="@id/nav_home" />
         <action
             android:id="@+id/action_TourismLocationsFragment_to_RoutePlannerFragment"
             app:destination="@id/nav_route" />
@@ -78,16 +78,19 @@
         <action
             android:id="@+id/action_TourismLocationsFragment_to_AboutFragment"
             app:destination="@id/nav_about" />
+        <action
+            android:id="@+id/action_TourismLocationsFragment_to_TourismLocationsDetailFragment"
+            app:destination="@id/nav_locationDetail" />
     </fragment>
 
     <fragment
         android:id="@+id/nav_map"
         android:name="com.example.turizmoprograma.interactive_map.InteractiveMapFragment"
         android:label="@string/map"
-        tools:layout="@layout/fragment_interactive_map" >
+        tools:layout="@layout/fragment_interactive_map">
         <action
             android:id="@+id/action_InteractiveMapFragment_to_HomeFragment"
-            app:destination="@id/nav_home"/>
+            app:destination="@id/nav_home" />
         <action
             android:id="@+id/action_InteractiveMapFragment_to_RoutePlannerFragment"
             app:destination="@id/nav_route" />
@@ -109,10 +112,10 @@
         android:id="@+id/nav_links"
         android:name="com.example.turizmoprograma.useful_links.UsefulLinksFragment"
         android:label="@string/links"
-        tools:layout="@layout/fragment_useful_links" >
+        tools:layout="@layout/fragment_useful_links">
         <action
             android:id="@+id/action_UsefulLinksFragment_to_HomeFragment"
-            app:destination="@id/nav_home"/>
+            app:destination="@id/nav_home" />
         <action
             android:id="@+id/action_UsefulLinksFragment_to_RoutePlannerFragment"
             app:destination="@id/nav_route" />
@@ -134,10 +137,10 @@
         android:id="@+id/nav_help"
         android:name="com.example.turizmoprograma.help.HelpFragment"
         android:label="@string/help"
-        tools:layout="@layout/fragment_help" >
+        tools:layout="@layout/fragment_help">
         <action
             android:id="@+id/action_HelpFragment_to_HomeFragment"
-            app:destination="@id/nav_home"/>
+            app:destination="@id/nav_home" />
         <action
             android:id="@+id/action_HelpFragment_to_RoutePlannerFragment"
             app:destination="@id/nav_route" />
@@ -159,10 +162,10 @@
         android:id="@+id/nav_about"
         android:name="com.example.turizmoprograma.about.AboutFragment"
         android:label="@string/about"
-        tools:layout="@layout/fragment_about" >
+        tools:layout="@layout/fragment_about">
         <action
             android:id="@+id/action_AboutFragment_to_HomeFragment"
-            app:destination="@id/nav_home"/>
+            app:destination="@id/nav_home" />
         <action
             android:id="@+id/action_AboutFragment_to_RoutePlannerFragment"
             app:destination="@id/nav_route" />
@@ -178,6 +181,38 @@
         <action
             android:id="@+id/action_AboutFragment_to_HelpFragment"
             app:destination="@id/nav_help" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_locationDetail"
+        android:name="com.example.turizmoprograma.tourism_locations.TourismLocationsDetailFragment"
+
+        tools:layout="@layout/fragment_tourism_locations_detail">
+        <argument
+            android:name="fragment_tourism_locations_detail"
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_locationsDetail_to_HomeFragment"
+            app:destination="@id/nav_home" />
+        <action
+            android:id="@+id/action_locationsDetail_to_RoutePlannerFragment"
+            app:destination="@id/nav_route" />
+        <action
+            android:id="@+id/action_locationsDetail_to_TourismLocationsFragment"
+            app:destination="@id/nav_locations" />
+        <action
+            android:id="@+id/action_locationsDetail_to_InteractiveMapFragment"
+            app:destination="@id/nav_map" />
+        <action
+            android:id="@+id/action_locationsDetail_to_UsefulLinksFragment"
+            app:destination="@id/nav_links" />
+        <action
+            android:id="@+id/action_locationsDetail_to_HelpFragment"
+            app:destination="@id/nav_help" />
+        <action
+            android:id="@+id/action_locationsDetail_to_AboutFragment"
+            app:destination="@id/nav_about" />
     </fragment>
 
 </navigation>

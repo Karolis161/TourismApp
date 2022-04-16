@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/option_home"
+        android:icon="@drawable/home"
+        android:title="@string/home"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/option_menu"
+        android:icon="@drawable/more"
+        android:title="@string/menu"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/option_route_planner"
+                android:text="@string/route_planner"
+                android:title="@string/route_planner" />
+            <item
+                android:id="@+id/option_tourist_locations"
+                android:text="@string/locations"
+                android:title="@string/locations" />
+            <item
+                android:id="@+id/option_interactive_map"
+                android:text="@string/map"
+                android:title="@string/map" />
+            <item
+                android:id="@+id/option_help"
+                android:text="@string/help"
+                android:title="@string/help" />
+            <item
+                android:id="@+id/option_about"
+                android:text="@string/about"
+                android:title="@string/about" />
+        </menu>
+    </item>
+</menu>

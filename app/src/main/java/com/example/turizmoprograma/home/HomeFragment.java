@@ -15,7 +15,8 @@ import com.example.turizmoprograma.R;
 
 public class HomeFragment extends Fragment {
 
-    public HomeFragment() {}
+    public HomeFragment() {
+    }
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
