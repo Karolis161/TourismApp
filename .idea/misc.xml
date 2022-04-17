@@ -8,6 +8,7 @@
         <entry key="..\:/Users/Karolis Urbaitis/Documents/Programavimas/Android/TurizmoPrograma/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1095" />
         <entry key="..\:/Users/Karolis Urbaitis/Documents/Programavimas/Android/TurizmoPrograma/app/src/main/res/layout-v26/fragment_tourism_locations_detail.xml" value="0.1" />
         <entry key="..\:/Users/Karolis Urbaitis/Documents/Programavimas/Android/TurizmoPrograma/app/src/main/res/layout/activity_help.xml" value="0.1" />
+        <entry key="..\:/Users/Karolis Urbaitis/Documents/Programavimas/Android/TurizmoPrograma/app/src/main/res/layout/activity_interactive_map.xml" value="0.33" />
         <entry key="..\:/Users/Karolis Urbaitis/Documents/Programavimas/Android/TurizmoPrograma/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/Karolis Urbaitis/Documents/Programavimas/Android/TurizmoPrograma/app/src/main/res/layout/activity_main_drawer.xml" value="0.25" />
         <entry key="..\:/Users/Karolis Urbaitis/Documents/Programavimas/Android/TurizmoPrograma/app/src/main/res/layout/app_bar_main.xml" value="0.25" />
@@ -16,6 +17,7 @@
         <entry key="..\:/Users/Karolis Urbaitis/Documents/Programavimas/Android/TurizmoPrograma/app/src/main/res/layout/fragment_blank.xml" value="0.1" />
         <entry key="..\:/Users/Karolis Urbaitis/Documents/Programavimas/Android/TurizmoPrograma/app/src/main/res/layout/fragment_help.xml" value="0.17806484295845998" />
         <entry key="..\:/Users/Karolis Urbaitis/Documents/Programavimas/Android/TurizmoPrograma/app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="..\:/Users/Karolis Urbaitis/Documents/Programavimas/Android/TurizmoPrograma/app/src/main/res/layout/fragment_interactive_map.xml" value="0.33" />
         <entry key="..\:/Users/Karolis Urbaitis/Documents/Programavimas/Android/TurizmoPrograma/app/src/main/res/layout/fragment_route_planner.xml" value="0.17806484295845998" />
         <entry key="..\:/Users/Karolis Urbaitis/Documents/Programavimas/Android/TurizmoPrograma/app/src/main/res/layout/fragment_tourism_locations.xml" value="0.33" />
         <entry key="..\:/Users/Karolis Urbaitis/Documents/Programavimas/Android/TurizmoPrograma/app/src/main/res/layout/fragment_tourism_locations_detail.xml" value="0.33" />

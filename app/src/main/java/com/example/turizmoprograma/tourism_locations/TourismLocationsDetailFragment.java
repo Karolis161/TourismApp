@@ -56,10 +56,10 @@ public class TourismLocationsDetailFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         view = inflater.inflate(R.layout.fragment_tourism_locations_detail, container, false);
-        locationName = (TextView) view.findViewById(R.id.locationName);
-        locationDescription = (TextView) view.findViewById(R.id.locationDescription);
-        locationImg = (ImageView) view.findViewById(R.id.locationImg);
-        btnMap = (Button) view.findViewById(R.id.btnNav);
+        locationName = view.findViewById(R.id.locationName);
+        locationDescription = view.findViewById(R.id.locationDescription);
+        locationImg = view.findViewById(R.id.locationImg);
+        btnMap = view.findViewById(R.id.btnNav);
 
         Bundle bundle = getArguments();
         assert bundle != null;
@@ -71,7 +71,7 @@ public class TourismLocationsDetailFragment extends Fragment {
         lngDest = data.getLng();
         locationImg.setImageResource(data.getImg());
 
-        mapView = (MapView) view.findViewById(R.id.locationMap);
+        mapView = view.findViewById(R.id.locationMap);
         mapView.onCreate(savedInstanceState);
         mapView.onResume();
         try {
