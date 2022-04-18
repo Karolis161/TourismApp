@@ -22,9 +22,9 @@
                 android:text="@string/locations"
                 android:title="@string/locations" />
             <item
-                android:id="@+id/option_useful_links"
-                android:text="@string/links"
-                android:title="@string/links" />
+                android:id="@+id/option_tourism_helper"
+                android:text="@string/helper"
+                android:title="@string/helper" />
             <item
                 android:id="@+id/option_help"
                 android:text="@string/help"

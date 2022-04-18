@@ -20,8 +20,8 @@
             android:id="@+id/action_HomeFragment_to_InteractiveMapFragment"
             app:destination="@id/nav_map" />
         <action
-            android:id="@+id/action_HomeFragment_to_UsefulLinksFragment"
-            app:destination="@id/nav_links" />
+            android:id="@+id/action_HomeFragment_to_TourismHelperFragment"
+            app:destination="@id/nav_helper" />
         <action
             android:id="@+id/action_HomeFragment_to_HelpFragment"
             app:destination="@id/nav_help" />
@@ -45,8 +45,8 @@
             android:id="@+id/action_RoutePlannerFragment_to_InteractiveMapFragment"
             app:destination="@id/nav_map" />
         <action
-            android:id="@+id/action_RoutePlannerFragment_to_UsefulLinksFragment"
-            app:destination="@id/nav_links" />
+            android:id="@+id/action_RoutePlannerFragment_to_TourismHelperFragment"
+            app:destination="@id/nav_helper" />
         <action
             android:id="@+id/action_RoutePlannerFragment_to_HelpFragment"
             app:destination="@id/nav_help" />
@@ -70,8 +70,8 @@
             android:id="@+id/action_TourismLocationsFragment_to_InteractiveMapFragment"
             app:destination="@id/nav_map" />
         <action
-            android:id="@+id/action_TourismLocationsFragment_to_UsefulLinksFragment"
-            app:destination="@id/nav_links" />
+            android:id="@+id/action_TourismLocationsFragment_to_TourismHelperFragment"
+            app:destination="@id/nav_helper" />
         <action
             android:id="@+id/action_TourismLocationsFragment_to_HelpFragment"
             app:destination="@id/nav_help" />
@@ -98,8 +98,8 @@
             android:id="@+id/action_InteractiveMapFragment_to_TourismLocationsFragment"
             app:destination="@id/nav_locations" />
         <action
-            android:id="@+id/action_InteractiveMapFragment_to_UsefulLinksFragment"
-            app:destination="@id/nav_links" />
+            android:id="@+id/action_InteractiveMapFragment_to_TourismHelperFragment"
+            app:destination="@id/nav_helper" />
         <action
             android:id="@+id/action_InteractiveMapFragment_to_HelpFragment"
             app:destination="@id/nav_help" />
@@ -109,27 +109,27 @@
     </fragment>
 
     <fragment
-        android:id="@+id/nav_links"
-        android:name="com.example.turizmoprograma.useful_links.UsefulLinksFragment"
-        android:label="@string/links"
-        tools:layout="@layout/fragment_useful_links">
+        android:id="@+id/nav_helper"
+        android:name="com.example.turizmoprograma.tourism_helper.TourismHelperFragment"
+        android:label="@string/helper"
+        tools:layout="@layout/fragment_tourism_helper">
         <action
-            android:id="@+id/action_UsefulLinksFragment_to_HomeFragment"
+            android:id="@+id/action_TourismHelperFragment_to_HomeFragment"
             app:destination="@id/nav_home" />
         <action
-            android:id="@+id/action_UsefulLinksFragment_to_RoutePlannerFragment"
+            android:id="@+id/action_TourismHelperFragment_to_RoutePlannerFragment"
             app:destination="@id/nav_route" />
         <action
-            android:id="@+id/action_UsefulLinksFragment_to_TourismLocationFragment"
+            android:id="@+id/action_TourismHelperFragment_to_TourismLocationFragment"
             app:destination="@id/nav_locations" />
         <action
-            android:id="@+id/action_UsefulLinksFragment_to_InteractiveMapFragment"
+            android:id="@+id/action_TourismHelperFragment_to_InteractiveMapFragment"
             app:destination="@id/nav_map" />
         <action
-            android:id="@+id/action_UsefulLinksFragment_to_HelpFragment"
+            android:id="@+id/action_TourismHelperFragment_to_HelpFragment"
             app:destination="@id/nav_help" />
         <action
-            android:id="@+id/action_UsefulLinksFragment_to_AboutFragment"
+            android:id="@+id/action_TourismHelperFragment_to_AboutFragment"
             app:destination="@id/nav_about" />
     </fragment>
 
@@ -151,8 +151,8 @@
             android:id="@+id/action_HelpFragment_to_InteractiveMapFragment"
             app:destination="@id/nav_map" />
         <action
-            android:id="@+id/action_HelpFragment_to_UsefulLinksFragment"
-            app:destination="@id/nav_links" />
+            android:id="@+id/action_HelpFragment_to_TourismHelperFragment"
+            app:destination="@id/nav_helper" />
         <action
             android:id="@+id/action_HelpFragment_to_AboutFragment"
             app:destination="@id/nav_about" />
@@ -176,8 +176,8 @@
             android:id="@+id/action_AboutFragment_to_InteractiveMapFragment"
             app:destination="@id/nav_map" />
         <action
-            android:id="@+id/action_AboutFragment_to_UsefulLinksFragment"
-            app:destination="@id/nav_links" />
+            android:id="@+id/action_AboutFragment_to_TourismHelperFragment"
+            app:destination="@id/nav_helper" />
         <action
             android:id="@+id/action_AboutFragment_to_HelpFragment"
             app:destination="@id/nav_help" />
@@ -205,8 +205,8 @@
             android:id="@+id/action_locationsDetail_to_InteractiveMapFragment"
             app:destination="@id/nav_map" />
         <action
-            android:id="@+id/action_locationsDetail_to_UsefulLinksFragment"
-            app:destination="@id/nav_links" />
+            android:id="@+id/action_locationsDetail_to_TourismHelperFragment"
+            app:destination="@id/nav_helper" />
         <action
             android:id="@+id/action_locationsDetail_to_HelpFragment"
             app:destination="@id/nav_help" />

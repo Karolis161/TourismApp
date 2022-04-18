@@ -39,7 +39,6 @@ public class TourismLocationsFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        Log.d(TAG, "OnCreateView in TourismLocationsFragment");
         view = inflater.inflate(R.layout.fragment_tourism_locations, container, false);
 
         List<TourismGroupLocationsData> groupSpotsDataList = new ArrayList<>();
@@ -73,23 +72,18 @@ public class TourismLocationsFragment extends Fragment {
 
                     if (whichCategory.contains("senamiestis")) {
                         tourismLocationsSen.add(locationsData);
-                        Log.d(TAG, "a location is added to senamiestis ");
                     }
                     if (whichCategory.contains("istorija")) {
                         tourismLocationsIst.add(locationsData);
-                        Log.d(TAG, "a location is added istorija ");
                     }
                     if (whichCategory.contains("parkas")) {
                         tourismLocationsPark.add(locationsData);
-                        Log.d(TAG, "a location is added parkas ");
                     }
                     if (whichCategory.contains("religija")) {
                         tourismLocationsRelig.add(locationsData);
-                        Log.d(TAG, "a location is added religija ");
                     }
                     if (whichCategory.contains("muziejus")) {
                         tourismLocationsMuz.add(locationsData);
-                        Log.d(TAG, "a location is added muziejus ");
                     }
                     if (!whichCategory.contains("senamiestis")
                             && !whichCategory.contains("istorija")
@@ -97,7 +91,6 @@ public class TourismLocationsFragment extends Fragment {
                             && !whichCategory.contains("muziejus")
                             && !whichCategory.contains("parkas")) {
                         tourismLocationsNoTag.add(locationsData);
-                        Log.d(TAG, "a location is added notag ");
                     }
                     cursor.moveToNext();
                 }
@@ -113,16 +106,15 @@ public class TourismLocationsFragment extends Fragment {
             }
             cursor.close();
             db.close();
-            Log.d(TAG, "Group spots datalist created ");
         } catch (Exception e) {
-            Log.d(TAG, "Error " + e);
+            e.printStackTrace();
         }
 
         if (groupSpotsDataList.size() == 0) {
             Toast.makeText(getActivity(), "Sorry, error occurred on preparing locations data.", Toast.LENGTH_SHORT).show();
         }
 
-        RecyclerView groupRecyclerViewLocations = (RecyclerView) view.findViewById(R.id.groupRecyclerViewSpots);
+        RecyclerView groupRecyclerViewLocations = view.findViewById(R.id.groupRecyclerViewSpots);
         groupRecyclerViewLocations.setHasFixedSize(true);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(requireActivity().getApplicationContext());
         groupRecyclerViewLocations.setLayoutManager(layoutManager);
@@ -148,7 +140,6 @@ public class TourismLocationsFragment extends Fragment {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
-        Log.d(TAG, "Item on bar selected " + id);
         switch (id) {
             case R.id.option_home:
                 Navigation.findNavController(view).navigate(R.id.action_TourismLocationsFragment_to_HomeFragment);
@@ -159,8 +150,8 @@ public class TourismLocationsFragment extends Fragment {
             case R.id.option_interactive_map:
                 Navigation.findNavController(view).navigate(R.id.action_TourismLocationsFragment_to_InteractiveMapFragment);
                 return true;
-            case R.id.option_useful_links:
-                Navigation.findNavController(view).navigate(R.id.action_TourismLocationsFragment_to_UsefulLinksFragment);
+            case R.id.option_tourism_helper:
+                Navigation.findNavController(view).navigate(R.id.action_TourismLocationsFragment_to_TourismHelperFragment);
                 return true;
             case R.id.option_help:
                 Navigation.findNavController(view).navigate(R.id.action_TourismLocationsFragment_to_HelpFragment);

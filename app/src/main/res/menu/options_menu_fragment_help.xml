@@ -26,9 +26,9 @@
                 android:text="@string/map"
                 android:title="@string/map" />
             <item
-                android:id="@+id/option_useful_links"
-                android:text="@string/links"
-                android:title="@string/links" />
+                android:id="@+id/option_tourism_helper"
+                android:text="@string/helper"
+                android:title="@string/helper" />
             <item
                 android:id="@+id/option_about"
                 android:text="@string/about"

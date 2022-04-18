@@ -21,9 +21,9 @@
             android:icon="@drawable/map"
             android:title="@string/map" />
         <item
-            android:id="@+id/nav_links"
-            android:icon="@drawable/link"
-            android:title="@string/links" />
+            android:id="@+id/nav_helper"
+            android:icon="@drawable/helper"
+            android:title="@string/helper" />
         <item
             android:id="@+id/nav_help"
             android:icon="@drawable/help"
@@ -38,9 +38,9 @@
         <item android:title="@string/social">
             <menu>
                 <item
-                    android:id="@+id/share"
-                    android:icon="@drawable/ic_menu_share"
-                    android:title="@string/share"/>
+                    android:id="@+id/contact"
+                    android:icon="@drawable/email"
+                    android:title="@string/contact" />
             </menu>
         </item>
     </group>

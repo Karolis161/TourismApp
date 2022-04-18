@@ -47,7 +47,6 @@ public class AboutFragment extends Fragment {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
-        Log.d(TAG, "Item on bar selected " + id);
         switch (id) {
             case R.id.option_home:
                 Navigation.findNavController(view).navigate(R.id.action_AboutFragment_to_HomeFragment);
@@ -61,8 +60,8 @@ public class AboutFragment extends Fragment {
             case R.id.option_interactive_map:
                 Navigation.findNavController(view).navigate(R.id.action_AboutFragment_to_InteractiveMapFragment);
                 return true;
-            case R.id.option_useful_links:
-                Navigation.findNavController(view).navigate(R.id.action_AboutFragment_to_UsefulLinksFragment);
+            case R.id.option_tourism_helper:
+                Navigation.findNavController(view).navigate(R.id.action_AboutFragment_to_TourismHelperFragment);
                 return true;
             case R.id.option_help:
                 Navigation.findNavController(view).navigate(R.id.action_AboutFragment_to_HelpFragment);

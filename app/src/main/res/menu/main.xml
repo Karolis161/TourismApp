@@ -25,9 +25,9 @@
                 android:id="@+id/option_interactive_map"
                 android:icon="@drawable/map" />
             <item
-                android:title="@string/links"
-                android:id="@+id/option_useful_links"
-                android:icon="@drawable/link" />
+                android:title="@string/helper"
+                android:id="@+id/option_tourism_helper"
+                android:icon="@drawable/helper" />
             <item
                 android:title="@string/help"
                 android:id="@+id/option_help"

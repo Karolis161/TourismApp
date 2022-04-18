@@ -35,7 +35,6 @@ public class TourismLocationsAdapter extends RecyclerView.Adapter<TourismLocatio
 
     @NonNull
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        Log.d(TAG, "TourismLocationsAdapter onCreateViewHolder");
         tourismLocationsDB = new TourismLocationsDB(context);
         View itemView = LayoutInflater.from(context)
                 .inflate(R.layout.row_fragment_locations, parent, false);
@@ -43,8 +42,6 @@ public class TourismLocationsAdapter extends RecyclerView.Adapter<TourismLocatio
     }
 
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-        Log.d(TAG, "TourismLocationsAdapter onBindViewHolder");
-
         TourismLocationsData locations = tourismDataList.get(position);
         holder.locationName.setText(locations.getName());
         holder.locationImg.setImageResource(locations.getImg());
@@ -69,8 +66,8 @@ public class TourismLocationsAdapter extends RecyclerView.Adapter<TourismLocatio
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
-            this.locationName = (TextView) itemView.findViewById(R.id.locationName);
-            this.locationImg = (ImageView) itemView.findViewById(R.id.locationImg);
+            this.locationName = itemView.findViewById(R.id.locationName);
+            this.locationImg = itemView.findViewById(R.id.locationImg);
         }
     }
 }

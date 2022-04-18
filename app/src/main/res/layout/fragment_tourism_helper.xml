@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tourism_helper.TourismHelperFragment">
+
+    <TableLayout
+        android:layout_width="330dp"
+        android:layout_height="537dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp">
+
+            <ImageButton
+                android:id="@+id/btnUber"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="15dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/roundedcornersuber"
+                android:contentDescription="@string/uber"
+                android:padding="2dp"
+                android:scaleType="fitCenter"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+            <ImageButton
+                android:id="@+id/btnBooking"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="15dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/roundedcornersbooking"
+                android:contentDescription="@string/booking"
+                android:padding="2dp"
+                android:scaleType="fitCenter"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+            <ImageButton
+                android:id="@+id/btnCitybee"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="15dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/roundedcornerscitybee"
+                android:contentDescription="@string/citybee"
+                android:padding="2dp"
+                android:scaleType="fitCenter"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/btnBolt"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="15dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/roundedcornersbolt"
+                android:contentDescription="@string/bolt"
+                android:padding="2dp"
+                android:scaleType="fitCenter"
+                android:text="@string/bolt"
+                tools:ignore="ImageContrastCheck" />
+
+            <ImageButton
+                android:id="@+id/btnAirbnb"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="15dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/roundedcornersairbnb"
+                android:contentDescription="@string/airbnb"
+                android:padding="2dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/btnTrafi"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="15dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/roundedcornerstrafi"
+                android:contentDescription="@string/trafi"
+                android:padding="2dp"
+                android:scaleType="fitCenter" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="15dp">
+
+            <Button
+                android:id="@+id/btnVLNWeb"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="15dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/roundedcorners"
+                android:backgroundTint="#fdba0b"
+                android:contentDescription="@string/uber"
+                android:padding="2dp"
+                android:scaleType="fitCenter"
+                android:text="@string/vilnius_website"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/btnCovid"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="15dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/roundedcorners"
+                android:backgroundTint="#006a42"
+                android:contentDescription="@string/booking"
+                android:padding="2dp"
+                android:scaleType="fitCenter"
+                android:text="@string/corona_website"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/btnLTGov"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="15dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/roundedcorners"
+                android:backgroundTint="#c22229"
+                android:contentDescription="@string/citybee"
+                android:padding="2dp"
+                android:scaleType="fitCenter"
+                android:text="@string/lt_gov_website"
+                tools:ignore="ButtonStyle" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp">
+
+            <Button
+                android:id="@+id/btnLTTour"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="15dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/roundedcorners"
+                android:backgroundTint="#fdba0b"
+                android:contentDescription="@string/uber"
+                android:padding="2dp"
+                android:scaleType="fitCenter"
+                android:text="@string/lt_tour_website"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/btnLTReng"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="15dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/roundedcorners"
+                android:backgroundTint="#006a42"
+                android:contentDescription="@string/booking"
+                android:padding="2dp"
+                android:scaleType="fitCenter"
+                android:text="@string/lt_reng_website"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/btnLTAbout"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="15dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/roundedcorners"
+                android:backgroundTint="#c22229"
+                android:contentDescription="@string/citybee"
+                android:padding="2dp"
+                android:scaleType="fitCenter"
+                android:text="@string/lt_about_website"
+                tools:ignore="ButtonStyle" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/useful_apps"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:text="@string/useful_links"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,16 +1,12 @@
 package com.example.turizmoprograma.tourism_locations;
 
 import android.content.Context;
-import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.util.Log;
 
 import com.example.turizmoprograma.R;
 
 public class TourismLocationsDB extends SQLiteOpenHelper {
-
-    private static final String TAG = "LocationsDBHelper: ";
 
     private static final int DATABASE_VERSION = 1;
     private static final String DATABASE_NAME = "locationsManager";
@@ -89,7 +85,7 @@ public class TourismLocationsDB extends SQLiteOpenHelper {
         String ROW_15 = "INSERT INTO " + TABLE_LOCATIONS + " VALUES (" +
                 "15,'istorija;gatvė','Gedimino prospektas','Gedimino pr., Vilnius','Tai pagrindinė Vilniaus centro arterija, prasidedanti nuo Katedros aikštės, ir pasibaigianti prie LR Seimo rūmų. Šioje gatvėje gyvenimas verda aktyviausiai - čia įsikūrę pagrindinės valstybinės institucijos, šalia - kultūros centrai ir garsiausi teatrai, pramogų ir parduotuvių vietos. Dalis prospekto vakarais ir savaitgaliais skirta tik pėstiesiems, tačiau veiksmas čia nesiliauja - abipus gatvės daugybė barų ir restoranų. Žengdami prospektu nepamirškite stebėti, kaip keičiasi miesto architektūra - vos 1,8 km, tačiau pokyčiai akivaizdūs.', 54.6894452, 25.2659319," + R.drawable.gediminoprospektas + ")";
         db.execSQL(ROW_15);
-        //Popular museums
+        //Museums
         String ROW_16 = "INSERT INTO " + TABLE_LOCATIONS + " VALUES (" +
                 "16,'muziejus','Vilniaus miesto muziejus','Vokiečių g. 6, Vilnius','Vilniaus muziejus – nauja sostinės pažinimo erdvė miesto gyventojams ir svečiams. 2021 m. pavasarį duris lankytojams atvėrusiame muziejuje pristatomi unikalūs ir dar nežinomi, tačiau aktualūs pasakojimai bei miesto istorijos. Dinamiškas ir nuolat besikeičiantis, kaip ir pats miestas, muziejus kasmet planuoja pristatyti po 2–3 parodas, grįstas autentiškais miesto gyvenimo tyrimais. Išskirtinai Vilniui skirtas muziejus kviečia įdėmiau įsižiūrėti į mus nuolat supančią aplinką ir joje išvysti ką nors netikėto.', 54.6784222, 25.2849577," + R.drawable.vilniausmuziejus + ")";
         db.execSQL(ROW_16);
@@ -121,7 +117,7 @@ public class TourismLocationsDB extends SQLiteOpenHelper {
         String ROW_25 = "INSERT INTO " + TABLE_LOCATIONS + " VALUES (" +
                 "25,'religija;bažnyčia','Šv. Kazimiero bažnyčia','Didžioji g. 34, Vilnius, Vilnius','Barokinio stiliaus Šv. Kazimiero bažnyčia yra vienintelė Lietuvoje, kuri buvo pastatyta pagal Romos Jėzaus (Il Gesu) bažnyčios pavyzdį. Bažnyčios bokštus puošia karališkoji karūna, vidų – trys vėlyvojo baroko stiliaus dirbtinio marmuro altoriai. Bažnyčiai paveikslus 1993 m. nutapė dailininkas Antanas Kmieliauskas. Didžiajame altoriuje puikuojasi „Kristaus prisikėlimas” ir „Šv. Kazimieras“, šoniniuose – „Šv. Andriejus Bobola“ ir „Šv. Ignacas Lojola“.', 54.6776799, 25.2885776," + R.drawable.kazimierobaznycia + ")";
         db.execSQL(ROW_25);
-        //Popular parks
+        //Parks
         String ROW_26 = "INSERT INTO " + TABLE_LOCATIONS + " VALUES (" +
                 "26,'parkas','Vilniaus universiteto botanikos sodas','Kairėnų g. 43, Vilnius','Jau daugiau nei 140 metų VU botanikos sodas yra neatsiejama universiteto ir sostinės gyventojų bendruomenės mokslo, švietėjiško ir socialinio gyvenimo dalis. Istorinės aplinkybės lėmė, kad botanikos sodas net keletą kartų buvo perkeltas. Botanikos sodas yra įsikūręs ir lankytojų laukia bei įvairias paslaugas teikia dviejose Vilniaus vietose: Kairėnuose ir Vingio parke. Bendras botanikos sodo plotas – net 199 ha. Kiekvienu šiltojo sezono metu čia auga, žydi ir bręsta skirtingi augalai: tiek rūšiniai augalai bei įvairios jų veislės, atvežtos iš tolimų ir artimų kraštų, tiek vietinės žolės ir medžiai, čia augantys natūraliai.', 54.7356049, 25.4013226," + R.drawable.vubotanikossodas + ")";
         db.execSQL(ROW_26);
@@ -137,17 +133,12 @@ public class TourismLocationsDB extends SQLiteOpenHelper {
         String ROW_30 = "INSERT INTO " + TABLE_LOCATIONS + " VALUES (" +
                 "30,'parkas','Europos parkas','Europos Parko g. 302, Joneikiškės','Europos parke eksponuojama virš 100 skulptūrų, kurių autoriai – menininkai iš 32 valstybių. Tarp jų – žymūs šiuolaikinio meno kūrėjai, tokie kaip Lenkijos dailininkė Magdalena Abakanovič (Magdalena Abakanowicz),  JAV dailininkas, dailės teoretikas Solis Le Vitas (Sol LeWitt), amerikiečių menininkas, skulptorius ir fotografas Denisas Openheimas (Dennis Oppenheim). Viena įspūdingiausių Europos parko skulptūrų – iš senų televizorių pastatytas LNK Infomedis, kuris rekordus fiksuojančios agentūros „Guinness World Records“  buvo pripažintas kaip didžiausia tokio tipo skulptūra.', 54.8309512, 25.3517341," + R.drawable.europosparkas + ")";
         db.execSQL(ROW_30);
-
-        Log.d(TAG, "CREATE STATEMENT invoked");
-        Log.d(TAG, "Table \"" + TABLE_LOCATIONS + "\" created");
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int i, int i1) {
         String DROP_TABLE = "DROP TABLE IF EXISTS " + TABLE_LOCATIONS;
         db.execSQL(DROP_TABLE);
-        Log.d(TAG, "Table \"" + TABLE_LOCATIONS + "\" dropped");
         onCreate(db);
-        Log.d(TAG, "Table \"" + TABLE_LOCATIONS + "\" created again");
     }
 }
