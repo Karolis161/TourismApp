@@ -33,16 +33,4 @@
             android:icon="@drawable/about"
             android:title="@string/about" />
     </group>
-
-    <group android:checkableBehavior="single">
-        <item android:title="@string/social">
-            <menu>
-                <item
-                    android:id="@+id/contact"
-                    android:icon="@drawable/email"
-                    android:title="@string/contact" />
-            </menu>
-        </item>
-    </group>
-
 </menu>

@@ -10,7 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="125dp"
+        android:layout_marginStart="100dp"
         android:layout_marginTop="100dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -21,10 +21,12 @@
 
             <Button
                 android:id="@+id/routePlannerBtn"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
+                android:background="@drawable/custom_home_button"
                 android:text="@string/route_planner"
+                android:textColor="#5b0e2d"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -39,7 +41,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
+                android:background="@drawable/custom_home_button"
                 android:text="@string/tourist_locations"
+                android:textColor="#5b0e2d"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/routePlannerBtn" />
 
@@ -54,7 +58,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
+                android:background="@drawable/custom_home_button"
                 android:text="@string/map"
+                android:textColor="#5b0e2d"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/locationsBtn" />
 
@@ -69,7 +75,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
+                android:background="@drawable/custom_home_button"
                 android:text="@string/helper"
+                android:textColor="#5b0e2d"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/mapBtn" />
 
@@ -84,7 +92,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
+                android:background="@drawable/custom_home_button"
                 android:text="@string/about"
+                android:textColor="#5b0e2d"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/helperBtn" />
         </TableRow>
@@ -95,9 +105,11 @@
 
             <Button
                 android:id="@+id/helpBtn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="213dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/custom_home_button"
                 android:text="@string/help"
+                android:textColor="#5b0e2d"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/aboutBtn" />
         </TableRow>

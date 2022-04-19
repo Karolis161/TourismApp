@@ -1,26 +1,33 @@
 package com.example.turizmoprograma.help;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.example.turizmoprograma.R;
 
 public class HelpFragment extends Fragment {
 
-    private static final String TAG = "HelpFragment";
     private View view;
+    Button btnCallCentre;
+    Button btnEmailCentre;
+    Button btnFindCentre;
+    Button btnEmailCreator;
+    Button btnEmailCreatorUni;
+    Button btnFindCreatorUni;
 
     public HelpFragment() {
     }
@@ -34,6 +41,51 @@ public class HelpFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstance) {
         view = inflater.inflate(R.layout.fragment_help, container, false);
+
+        btnCallCentre = view.findViewById(R.id.btnCentreCall);
+        btnEmailCentre = view.findViewById(R.id.btnCentreEmail);
+        btnFindCentre = view.findViewById(R.id.btnCentreMap);
+        btnEmailCreator = view.findViewById(R.id.btnCreatorEmail);
+        btnEmailCreatorUni = view.findViewById(R.id.btnUniEmail);
+        btnFindCreatorUni = view.findViewById(R.id.btnUniMap);
+
+        btnCallCentre.setOnClickListener(view -> {
+            String number = "852629660";
+            Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + number));
+            startActivity(intent);
+        });
+
+        btnEmailCentre.setOnClickListener(view -> {
+            Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
+                    "mailto", "tic@vilnius.lt", null));
+            startActivity(Intent.createChooser(intent, "Choose an Email client :"));
+        });
+
+        btnFindCentre.setOnClickListener(view -> {
+            Uri gmmIntentUri = Uri.parse("geo:54.6845904,25.2899959" + "Vilnius Tourism Centre");
+            Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+            mapIntent.setPackage("com.google.android.apps.maps");
+            startActivity(mapIntent);
+        });
+
+        btnEmailCreator.setOnClickListener(view -> {
+            Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
+                    "mailto", "karolis.urbaitis@stud.vilniustech.lt", null));
+            startActivity(Intent.createChooser(intent, "Choose an Email client :"));
+        });
+
+        btnEmailCreatorUni.setOnClickListener(view -> {
+            Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
+                    "mailto", "itsc@vilniustech.lt", null));
+            startActivity(Intent.createChooser(intent, "Choose an Email client :"));
+        });
+
+        btnFindCreatorUni.setOnClickListener(view -> {
+            Uri gmmIntentUri = Uri.parse("geo:54.7219118,25.336616247800787" + "Vilnius Tourism Centre");
+            Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+            mapIntent.setPackage("com.google.android.apps.maps");
+            startActivity(mapIntent);
+        });
         return view;
     }
 

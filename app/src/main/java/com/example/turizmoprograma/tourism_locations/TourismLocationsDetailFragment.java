@@ -35,6 +35,7 @@ public class TourismLocationsDetailFragment extends Fragment {
     ImageView locationImg;
     MapView mapView;
     Button btnMap;
+    Button btnShare;
 
     String name;
     double latDest, lngDest;
@@ -60,6 +61,7 @@ public class TourismLocationsDetailFragment extends Fragment {
         locationDescription = view.findViewById(R.id.locationDescription);
         locationImg = view.findViewById(R.id.locationImg);
         btnMap = view.findViewById(R.id.btnNav);
+        btnShare = view.findViewById(R.id.btnShare);
 
         Bundle bundle = getArguments();
         assert bundle != null;
@@ -93,6 +95,14 @@ public class TourismLocationsDetailFragment extends Fragment {
             Uri gmmIntentUri = Uri.parse("geo:0,0?q=" + name);
             Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
             startActivity(mapIntent);
+        });
+
+        btnShare.setOnClickListener(view -> {
+            Intent sendIntent = new Intent();
+            sendIntent.setAction(Intent.ACTION_SEND);
+            sendIntent.putExtra(Intent.EXTRA_TEXT, "This is my text to send.");
+            sendIntent.setType("text/plain");
+            startActivity(sendIntent);
         });
         return view;
     }
