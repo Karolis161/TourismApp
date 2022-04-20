@@ -23,7 +23,6 @@ import com.example.turizmoprograma.R;
 
 public class TourismHelperFragment extends Fragment {
 
-    private static final String TAG = "HelpFragment";
     private View view;
 
     ImageButton imgButtonUber;

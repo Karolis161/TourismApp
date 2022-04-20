@@ -53,6 +53,9 @@
         <action
             android:id="@+id/action_RoutePlannerFragment_to_AboutFragment"
             app:destination="@id/nav_about" />
+        <action
+            android:id="@+id/action_RoutePlannerFragment_to_RoutePlannerDetailFragment"
+            app:destination="@id/nav_routeDetail" />
     </fragment>
 
     <fragment
@@ -193,25 +196,57 @@
             app:argType="string" />
 
         <action
-            android:id="@+id/action_locationsDetail_to_HomeFragment"
+            android:id="@+id/action_LocationsDetailFragment_to_HomeFragment"
             app:destination="@id/nav_home" />
         <action
-            android:id="@+id/action_locationsDetail_to_RoutePlannerFragment"
+            android:id="@+id/action_LocationsDetailFragment_to_RoutePlannerFragment"
             app:destination="@id/nav_route" />
         <action
-            android:id="@+id/action_locationsDetail_to_TourismLocationsFragment"
+            android:id="@+id/action_LocationsDetailFragment_to_TourismLocationsFragment"
             app:destination="@id/nav_locations" />
         <action
-            android:id="@+id/action_locationsDetail_to_InteractiveMapFragment"
+            android:id="@+id/action_LocationsDetailFragment_to_InteractiveMapFragment"
             app:destination="@id/nav_map" />
         <action
-            android:id="@+id/action_locationsDetail_to_TourismHelperFragment"
+            android:id="@+id/action_LocationsDetailFragment_to_TourismHelperFragment"
             app:destination="@id/nav_helper" />
         <action
-            android:id="@+id/action_locationsDetail_to_HelpFragment"
+            android:id="@+id/action_LocationsDetailFragment_to_HelpFragment"
             app:destination="@id/nav_help" />
         <action
-            android:id="@+id/action_locationsDetail_to_AboutFragment"
+            android:id="@+id/action_LocationsDetailFragment_to_AboutFragment"
+            app:destination="@id/nav_about" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_routeDetail"
+        android:name="com.example.turizmoprograma.route_planner.RoutePlannerDetailFragment"
+        tools:layout="@layout/fragment_route_planner_detail">
+
+        <argument
+            android:name="fragment_route_planner_detail"
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_RoutePlannerDetailFragment_to_HomeFragment"
+            app:destination="@id/nav_home" />
+        <action
+            android:id="@+id/action_RoutePlannerDetailFragment_to_RoutePlannerFragment"
+            app:destination="@id/nav_route" />
+        <action
+            android:id="@+id/action_RoutePlannerDetailFragment_to_TourismLocationFragment"
+            app:destination="@id/nav_locations" />
+        <action
+            android:id="@+id/action_RoutePlannerDetailFragment_to_InteractiveMapFragment"
+            app:destination="@id/nav_map" />
+        <action
+            android:id="@+id/action_RoutePlannerDetailFragment_to_TourismHelperFragment"
+            app:destination="@id/nav_helper" />
+        <action
+            android:id="@+id/action_RoutePlannerDetailFragment_to_HelpFragment"
+            app:destination="@id/nav_help" />
+        <action
+            android:id="@+id/action_RoutePlannerDetailFragment_to_AboutFragment"
             app:destination="@id/nav_about" />
     </fragment>
 

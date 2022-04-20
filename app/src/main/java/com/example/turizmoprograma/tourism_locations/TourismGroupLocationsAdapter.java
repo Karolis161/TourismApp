@@ -51,9 +51,8 @@ public class TourismGroupLocationsAdapter extends RecyclerView.Adapter<TourismGr
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
-
-            this.placeCategory = (TextView) itemView.findViewById(R.id.placeCategory);
-            this.recyclerViewSpots = (RecyclerView) itemView.findViewById(R.id.recyclerViewSpots);
+            this.placeCategory = itemView.findViewById(R.id.placeCategory);
+            this.recyclerViewSpots = itemView.findViewById(R.id.recyclerViewSpots);
         }
     }
 

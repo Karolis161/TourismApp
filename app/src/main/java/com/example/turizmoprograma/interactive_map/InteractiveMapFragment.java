@@ -36,7 +36,6 @@ import java.util.List;
 
 public class InteractiveMapFragment extends Fragment {
 
-    private static final String TAG = "MapFragment";
     public static final String TABLE_LOCATIONS = "locations";
     private View view;
 

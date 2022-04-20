@@ -27,19 +27,17 @@ import java.util.List;
 
 public class TourismLocationsFragment extends Fragment {
 
-    private static final String TAG = "LocationsFragment";
     public static final String TABLE_LOCATIONS = "locations";
-
     private View view;
+    RecyclerView groupRecyclerViewLocations;
 
     public TourismLocationsFragment() {
     }
 
-    @SuppressLint("NotifyDataSetChanged")
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_tourism_locations, container, false);
+        groupRecyclerViewLocations = view.findViewById(R.id.groupRecyclerViewSpots);
 
         List<TourismGroupLocationsData> groupSpotsDataList = new ArrayList<>();
         List<TourismLocationsData> tourismLocationsSen = new ArrayList<>();
@@ -47,14 +45,14 @@ public class TourismLocationsFragment extends Fragment {
         List<TourismLocationsData> tourismLocationsPark = new ArrayList<>();
         List<TourismLocationsData> tourismLocationsRelig = new ArrayList<>();
         List<TourismLocationsData> tourismLocationsMuz = new ArrayList<>();
-        List<TourismLocationsData> tourismLocationsNoTag = new ArrayList<>();
+        List<TourismLocationsData> tourismLocationsMem = new ArrayList<>();
 
         try {
             TourismLocationsDB dbHelper = new TourismLocationsDB(getContext());
-            SQLiteDatabase db = dbHelper.getReadableDatabase();
+            SQLiteDatabase db = dbHelper.getWritableDatabase();
             Cursor cursor = db.rawQuery("select * from " + TABLE_LOCATIONS, null);
-
             String whichCategory;
+
             if (cursor.moveToFirst()) {
                 while (!cursor.isAfterLast()) {
                     TourismLocationsData locationsData = new TourismLocationsData();
@@ -85,12 +83,8 @@ public class TourismLocationsFragment extends Fragment {
                     if (whichCategory.contains("muziejus")) {
                         tourismLocationsMuz.add(locationsData);
                     }
-                    if (!whichCategory.contains("senamiestis")
-                            && !whichCategory.contains("istorija")
-                            && !whichCategory.contains("religija")
-                            && !whichCategory.contains("muziejus")
-                            && !whichCategory.contains("parkas")) {
-                        tourismLocationsNoTag.add(locationsData);
+                    if (whichCategory.contains("memorialas")) {
+                        tourismLocationsMem.add(locationsData);
                     }
                     cursor.moveToNext();
                 }
@@ -100,10 +94,8 @@ public class TourismLocationsFragment extends Fragment {
             groupSpotsDataList.add(new TourismGroupLocationsData("Museums", tourismLocationsMuz));
             groupSpotsDataList.add(new TourismGroupLocationsData("Religion", tourismLocationsRelig));
             groupSpotsDataList.add(new TourismGroupLocationsData("Parks", tourismLocationsPark));
+            groupSpotsDataList.add(new TourismGroupLocationsData("Memorials", tourismLocationsMem));
 
-            if (tourismLocationsNoTag.size() > 0) {
-                groupSpotsDataList.add(new TourismGroupLocationsData("その他", tourismLocationsNoTag));
-            }
             cursor.close();
             db.close();
         } catch (Exception e) {
@@ -114,13 +106,15 @@ public class TourismLocationsFragment extends Fragment {
             Toast.makeText(getActivity(), "Sorry, error occurred on preparing locations data.", Toast.LENGTH_SHORT).show();
         }
 
-        RecyclerView groupRecyclerViewLocations = view.findViewById(R.id.groupRecyclerViewSpots);
-        groupRecyclerViewLocations.setHasFixedSize(true);
-        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(requireActivity().getApplicationContext());
-        groupRecyclerViewLocations.setLayoutManager(layoutManager);
-        TourismGroupLocationsAdapter tourismLocationsAdapter = new TourismGroupLocationsAdapter(requireActivity().getApplicationContext(), groupSpotsDataList, this);
+        //RecyclerView groupRecyclerViewLocations = view.findViewById(R.id.groupRecyclerViewSpots);
+        //groupRecyclerViewLocations.setHasFixedSize(true);
+        TourismGroupLocationsAdapter tourismLocationsAdapter = new TourismGroupLocationsAdapter
+                (requireActivity().getApplicationContext(), groupSpotsDataList, this);
         groupRecyclerViewLocations.setAdapter(tourismLocationsAdapter);
-        tourismLocationsAdapter.notifyDataSetChanged();
+        groupRecyclerViewLocations.setLayoutManager(new LinearLayoutManager(requireActivity().getApplicationContext()));
+        //RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(requireActivity().getApplicationContext());
+        //groupRecyclerViewLocations.setLayoutManager(layoutManager);
+        //tourismLocationsAdapter.notifyDataSetChanged();
         return view;
     }
 

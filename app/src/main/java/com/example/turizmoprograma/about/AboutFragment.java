@@ -19,7 +19,6 @@ import com.example.turizmoprograma.R;
 
 public class AboutFragment extends Fragment {
 
-    private static final String TAG = "AboutFragment";
     private View view;
 
     public AboutFragment() {

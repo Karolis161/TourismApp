@@ -21,7 +21,6 @@ import java.util.List;
 import java.util.Objects;
 
 public class TourismLocationsAdapter extends RecyclerView.Adapter<TourismLocationsAdapter.MyViewHolder> {
-    private static final String TAG = "LocationsAdapter";
     List<TourismLocationsData> tourismDataList;
     Context context;
     TourismLocationsDB tourismLocationsDB;

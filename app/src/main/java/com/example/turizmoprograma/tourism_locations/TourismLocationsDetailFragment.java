@@ -9,7 +9,6 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -36,11 +35,8 @@ public class TourismLocationsDetailFragment extends Fragment {
     MapView mapView;
     Button btnMap;
     Button btnShare;
-
     String name;
     double latDest, lngDest;
-
-    private static final String TAG = "AboutFragment";
     private View view;
 
     public TourismLocationsDetailFragment() {
@@ -119,25 +115,25 @@ public class TourismLocationsDetailFragment extends Fragment {
         int id = item.getItemId();
         switch (id) {
             case R.id.option_home:
-                Navigation.findNavController(view).navigate(R.id.action_locationsDetail_to_HomeFragment);
+                Navigation.findNavController(view).navigate(R.id.action_LocationsDetailFragment_to_HomeFragment);
                 return true;
             case R.id.option_route_planner:
-                Navigation.findNavController(view).navigate(R.id.action_locationsDetail_to_RoutePlannerFragment);
+                Navigation.findNavController(view).navigate(R.id.action_LocationsDetailFragment_to_RoutePlannerFragment);
                 return true;
             case R.id.option_tourist_locations:
-                Navigation.findNavController(view).navigate(R.id.action_locationsDetail_to_TourismLocationsFragment);
+                Navigation.findNavController(view).navigate(R.id.action_LocationsDetailFragment_to_TourismLocationsFragment);
                 return true;
             case R.id.option_interactive_map:
-                Navigation.findNavController(view).navigate(R.id.action_locationsDetail_to_InteractiveMapFragment);
+                Navigation.findNavController(view).navigate(R.id.action_LocationsDetailFragment_to_InteractiveMapFragment);
                 return true;
             case R.id.option_tourism_helper:
-                Navigation.findNavController(view).navigate(R.id.action_locationsDetail_to_TourismHelperFragment);
+                Navigation.findNavController(view).navigate(R.id.action_LocationsDetailFragment_to_TourismHelperFragment);
                 return true;
             case R.id.option_help:
-                Navigation.findNavController(view).navigate(R.id.action_locationsDetail_to_HelpFragment);
+                Navigation.findNavController(view).navigate(R.id.action_LocationsDetailFragment_to_HelpFragment);
                 return true;
             case R.id.option_about:
-                Navigation.findNavController(view).navigate(R.id.action_locationsDetail_to_AboutFragment);
+                Navigation.findNavController(view).navigate(R.id.action_LocationsDetailFragment_to_AboutFragment);
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
