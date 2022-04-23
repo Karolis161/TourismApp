@@ -1,13 +1,14 @@
 package com.example.turizmoprograma.route_planner;
 
 import java.io.Serializable;
-import java.util.List;
 
 public class RoutePlannerData implements Serializable {
     private String routeName;
     private double routeLength;
     private int routeTime;
     private int routeImg;
+    private String routeDescription;
+    private double lat, lng;
 
     public RoutePlannerData() {
     }
@@ -44,4 +45,27 @@ public class RoutePlannerData implements Serializable {
         this.routeImg = routeImg;
     }
 
+    public String getRouteDescription() {
+        return routeDescription;
+    }
+
+    public void setRouteDescription(String routeDescription) {
+        this.routeDescription = routeDescription;
+    }
+
+    public double getLat() {
+        return lat;
+    }
+
+    public void setLat(double lat) {
+        this.lat = lat;
+    }
+
+    public double getLng() {
+        return lng;
+    }
+
+    public void setLng(double lng) {
+        this.lng = lng;
+    }
 }

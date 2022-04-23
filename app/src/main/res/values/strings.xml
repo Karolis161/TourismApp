@@ -6,7 +6,8 @@
     <string name="route">Route Planner</string>
     <string name="locations">Tourist Locations</string>
     <string name="map">Interactive Map</string>
-    <string name="links">Useful links</string>
+    <string name="map1">Žemėlapis</string>
+    <string name="helper">Tourism Helper</string>
     <string name="help">Help</string>
     <string name="about">About</string>
     <string name="android_studio">Android Studio</string>
@@ -16,5 +17,147 @@
     <string name="social">Social</string>
     <string name="route_planner">Route Planner</string>
     <string name="tourist_locations">Tourist Locations</string>
-
+    <string name="menu">Meniu</string>
+    <string name="location_description">Location description</string>
+    <string name="vilnius">Vilnius</string>
+    <string name="title">Title</string>
+    <string name="creatorName">Karolis Urbaitis</string>
+    <string name="creatorEmail">karolis.urbaitis@stud.vilniustech.lt</string>
+    <string name="place_category">Place Category</string>
+    <string name="atidaryti_žemėlapyje">Atidaryti žemėlapyje</string>
+    <string name="atidaryti_map">Atidaryti žemėlapyje</string>
+    <string name="uber">Uber</string>
+    <string name="booking">Booking</string>
+    <string name="citybee">CityBee</string>
+    <string name="bolt">Bolt</string>
+    <string name="airbnb">Airbnb</string>
+    <string name="trafi">Trafi</string>
+    <string name="useful_apps">Useful apps</string>
+    <string name="useful_links">Useful links</string>
+    <string name="vilnius_website">Vilniaus Svetainė</string>
+    <string name="corona_website">Corona \n STOP</string>
+    <string name="lt_gov_website">Lietuvos Vyriausybė</string>
+    <string name="lt_tour_website">Lietuvos Turizmas</string>
+    <string name="lt_reng_website">Renginiai Lietuvoje</string>
+    <string name="lt_about_website">Apie \n Lietuvą</string>
+    <string name="contact">Contact</string>
+    <string name="vgtu">Vilniaus Gedimino Technikos universitetas</string>
+    <string name="aboutMe">Ši turistinių kelionių rekomendacinė programėlė yra sukurta Vilniaus
+        Gedimino Technikos universisteto studento Karolio Urbaičio kaip bakalauro darbas.</string>
+    <string name="aboutMe1">Šioje aplikacijoje galima pasirinkti vieną iš sudarytų maršrutų, atrasti naujas populiarias
+        turistines vietas, panaršyti interaktyviame žemėlapyje, kuriame galima rasti sužymėtas visas
+        aplikacijoje esamas turistines vietas. Taip pat yra skiltis su turizmui Lietuvoje
+        naudingomis programomis bei interneto svetainėmis</string>
+    <string name="call_tourism_centre">Call tourism centre</string>
+    <string name="email_tourism_centre">Email tourism centre</string>
+    <string name="find_tourism_centre">Find tourism centre</string>
+    <string name="email_app_creator">Email app creator</string>
+    <string name="email_creators_university">Email creator\'s university</string>
+    <string name="find_creators_university">Find creator\'s university</string>
+    <string name="dalintis">Dalintis</string>
+    <string name="route_category">Route Category</string>
+    <string name="routehistorydesc"> Šį maršrutą sudaro:
+        \n Pilies gatvė - Vilniaus gynybinės sienos bastėja - Prezidentūra - Gedimino prospektas.
+        \n Pilies gatvėje yra pagrindinė senamiesčio ašis, populiari vaikščiojimų vieta, iš gatvės
+        matyti Gedimino pilis. Pilies gatvėje daugybė architektūrinių, istorinių ir kultūrinių įžymybių,
+        gausu kavinių, restoranų, muziejų ir galerijų, viešbučių, papuošalų ir suvenyrų parduotuvių.
+        \n Vilniaus gynybinės sienos bastėjoje yra atidarytas ginklų muziejus, kuriame eksponuojama
+        ginkluotė nuo  XV a. iki XIX a.: akmeniniai patrankų sviediniai, senosios patrankos ir raitelių
+        šarvai. Bastėjoje įrengtoje ekspozicijoje esanti ikonografinė medžiaga atskleidžia to meto
+        gynybos ypatumus.
+        \n Prezidentūros viduje yra klasicizmo epochos stiliaus salės. Baltoji – pagrindinė,
+        kurioje teikiami apdovanojimai, Prezidentas susitinka su visuomene;
+        Mėlynoji skirta prezidento konfidencialiems pokalbiams;
+        Žaliojoje Prezidentas posėdžiauja su vyriausiais patarėjais;
+        taip pat čia – Žemėlapių, Delegacijų, Derybų, Pasitarimų salės.
+        \n Gedimino prospektas – centrinė miesto gatvė. Ji pavadinta Vilniaus įkūrėjo, Lietuvos
+        Didžiojo Kunigaikščio Gedimino vardu. Prospektas tęsiasi beveik du kilometrus. Viename
+        prospekto gale – Katedros aikštė, kitame – Seimo rūmai ir Neries upė. Gedimino prospektas
+        jungia tris aikštes: Katedros, Savivaldybės ir Nepriklausomybės. Gedimino prospekte švenčiamos
+        svarbiausios Lietuvos valstybinės šventės.</string>
+    <string name="routeparkdesc">Šį maršrutą sudaro:
+        \n Vilniaus universiteto botanikos sodas - Pavilnių regioninis parkas - Vingio parkas -
+        Bernardinų sodas.
+        \n Čia kaupiamas, tiriamas, vertinamas unikalus mūsų krašto augalų genofondas, o vertingiausias
+        vėliau ir saugomas neribotą laiką (pavyzdžiui, sodo žolinių dekoratyvinių augalų kolekcijose
+        saugoma per 600 Lietuvos selekcininkų sukurtų vertingų hibridų ir veislių pavyzdžių, 313 sode
+        saugomų augalų pavyzdžių yra įrašyti į nacionalinio augalų genofondo sąrašus).
+        \n Didžiausia pavilnių regioninio parko vertybė – unikalūs Lietuvoje ledynų tirpsmo vandenų
+        išgraužti raguvynai su būdingomis augalų bendrijomis. Įdomiausios Ribiškių ir Iškartų didžiosios
+        erozinės vėduoklės, ilgiausių Lietuvoje atragių sistema, Tuputiškių raguvų sistema, Ancučių ir
+        Pūčkorių stačiašlaičiai giliai suraižyti raguvyno masyvai, Vilnios slėnio šlaitai, išraiškingi
+        Markučių eroziniai latakai.
+        \n Vingio parko perlas – tai Vilniaus Universiteto botanikos sodo skyrius. Ilgas tradicijas
+        ir istoriją turintis sodas maloniai stebina savo turtinga augalų kolekcija. Botanikos sodo
+        komanda renka ir augina daugiau kaip 1200 pavadinimų augalų iš visų pasaulio geografinių zonų.
+        Lyginant su dideliu centrinę Vingio parko dalį lankančių žmonių srautu, botanikos sodas yra
+        labai rami, jauki vieta.
+        \n Bernardinų sodas atlieka reprezentacinio parko vaidmenį. Jam būdingos atviros ir uždaros
+        erdvės, rožynai, alpinariumai, tvenkiniai, fontanai. Parkas – tai savitas kraštovaizdis,
+        neeilinis peizažas. Iš įvairių vietų atsiveria patrauklios Vilnelės, Trijų kryžių kalno
+        tolimosios perspektyvos. Žvilgsnį nuo žemės keliant aukštyn matome apatinį gėlynų, tarpinį
+        krūmynų ir viršutinį medžių aukštą.</string>
+    <string name="routereligiondesc">Šį maršrutą sudaro:
+        \n Aušros vardai - Šv. Onos bažnyčia - Bažnytinio paveldo muziejus - Šv. Jonų bažnyčia -
+        Šv. Kazimiero bažnyčia.
+        \n Aušros vartai su Šv. Teresės bažnyčios Aušros Vartų koplyčia ir Švč. Mergelės Marijos
+        paveikslu yra vienas reikšmingiausių Lietuvos religinių, istorinių ir kultūrinių paminklų,
+        susijusių su Lietuvos valstybės ir ypač sostinės Vilniaus istorija, kuriame laikomas Šv.
+        Mergelės Marijos paveikslas, kuris krikščionių garbinamas kaip stebuklingas.
+        \n Šv. Onos bažnyčia yra vienas gražiausių ir, ko gero, garsiausių Vilniaus statinių. Tai
+        vėlyvosios gotikos šedevras. Bažnyčia buvo ne kartą remontuota, tačiau jos išorė nuo XVI a.
+        pabaigos beveik nepakito. Per penkis šimtmečius beveik nepakitusi Šv. Onos bažnyčia sulaukė
+        mūsų dienų ir tapo vienu iš Vilniaus simbolių. Šalia bažnyčios – XIX amžiuje pastatyta varpinė,
+        imituojanti gotikos stilių.
+        \n Bažnytinio paveldo muziejus sudomins ne tik sakralinio meno mėgėjus, bet ir kiekvieną senąja
+        Lietuvos kultūra besidomintį žmogų. Akį traukia prabangūs auksakalystės šedevrai, puošnūs
+        bažnytinės tekstilės pavyzdžiai. Lankytojai čia susipažins su išskirtine Katedros lobyno istorija
+        ir vertingiausiais jo eksponatais. Muziejuje vyksta paskaitos bei parodos.
+        \n Šventų Jonų bažnyčios statybos užtruko beveik 40 metų ir baigėsi 1426-aisiais. Anuomet
+        tai buvo gotikinis pastatas. 1571 metais bažnyčia perėjo jėzuitų ordino žinion, ir nuo tada
+        ji laikoma universiteto komplekso dalimi. Šventų Jonų bažnyčia yra mačiusi ne tik šventų
+        mišių, bet ir studentų protestų, ir teatro spektaklių, ir karalių sutikimų.
+        \n Šv. Kazimiero bažnyčia – vienas gražiausių baroko paminklų Vilniuje. Ji pastatyta pagal
+        Romos Jėzaus (Il Gesù) bažnyčios pavyzdį, tačiau skirtingai nuo jos, turi du pagrindinio
+        fasado bokštus. Bažnyčios planas sudaro lotynišką kry­žių. 40 m aukščio ir 17 m skersmens
+        kupolą vainikuoja Lietuvos didžiojo kunigaikščio karūnos formos žibintas.</string>
+    <string name="routemuseumsdesc">Šį maršrutą sudaro:
+        \n Vilniaus miesto muziejus - Lietuvos meno pažinimo centras „Tartle“ - Parodų erdvė
+        Istorijų namai - Vytauto Kasiulo dailės muziejus
+        \n Vilniaus miesto muziejus tai dinamiškas ir nuolat besikeičiantis, kaip ir pats miestas.
+        Muziejus kasmet planuoja pristatyti po 2–3 parodas, grįstas autentiškais miesto gyvenimo tyrimais.
+        Išskirtinai Vilniui skirtas muziejus kviečia įdėmiau įsižiūrėti į mus nuolat supančią aplinką ir joje išvysti ką
+        nors netikėto. Vilniaus muziejus renka artefaktus, susijusius su miesto aplinka, istorija.
+        \n TARTLE lankytojai kviečiami gyvai susipažinti su Lietuvos meno vertybėmis ir istoriniais
+        artefaktais nuo pagonybės laikų kultūrinio palikimo iki šiuolaikinio meno. Centro tikslas –
+        puoselėti, surinkti ir grąžinti į Lietuvą po pasaulį išbarstytą kultūrinį bei istorinį
+        lituanistinį paveldą, o svarbiausia – padaryti jį prieinamą visuomenei.
+        \n Istorijų namai – tai ne tik muziejus. Čia galima pasimėgauti ir jį supančia gamta, nes
+        naujoji parodų erdvė įsikūrusi Kalnų parko papėdėje, prie pagrindinių Vilniaus upių – Neries
+        ir Vilnios – santakos. Visas muziejaus parodas visuomet lydi gyvi ir virtualūs edukaciniai
+        užsiėmimai. Todėl Istorijų namuose laukiamas kiekvienas – kad ir kokio amžiaus būtų.
+        \n Vytauto Kasiulo dailės muziejuje periodiškai rengiamos tarptautinės parodos, lankytojai
+        supažindinami su Lietuvos egzilio menininkų kūrybos atodangomis, taip pat ir su XX a.
+        Vilniaus meno tradicijomis. Veikia edukacinis centras, rengiamos ekskursijos, vyksta
+        paskaitos, konferencijos, koncertai, kūrybiniai plenerai, kiti kultūros renginiai.</string>
+    <string name="routememorialsdesc">Šį maršrutą sudaro:
+        \n Paminklas LDK didžiajam kunigaikščiui Gediminui - Miesto vartų sargybinio skulptūra -
+        Karaliaus Mindaugo paminklas - Inskripcijos sovietinių represijų aukoms.
+        \n Gediminas yra Trakų ir Vilniaus miesto įkūrėjas ir vienas pačių garsiausių senosios
+        Lietuvos valdovų. Gediminas gyveno nuo 1275 iki 1341 metų, Lietuvos Didžiąją Kunigaikštystę
+        valdė 25-erius metus. Lietuvos sostinę jis perkėlė iš Trakų į Vilnių. Garsėjo daugiau ne kaip
+        karvedys, bet kaip diplomatas, atkreipęs į Lietuvą Europos dėmesį.
+        \n Aukštai ant pastato užkeltas miesto sargybinis iki šių dienų saugo vilniečius ir tikrina
+        visus, kurie apsilanko mieste. Tai – simbolis, kad esame saugomi, tačiau kiekvienas iš mūsų
+        turi stengtis, kad gyvenimas būtų ramus ir kad netektų gintis nuo užpuolikų.
+        \n Minint 750 metų Mindaugo karūnavimo dieną, 2003 m. liepos 6 d. buvo atidengtas paminklas
+        Karaliui Mindaugui. Iš granito iškaltas pusketvirto metro aukščio karalius pavaizduotas
+        sėdintis soste ir laikantis karaliaus regalijas – skeptrą ir rutulį su kryžiumi. Paminklo
+        postamentą juosia Saulės kalendorius, kuriame sužymėtos svarbiausios pagoniškos ir
+        krikščioniškos šventės.
+        \n Šiame pastate įsikūrę Apygardos teismo rūmai. Nacių laikais čia veikė gestapas, sovietinės
+        okupacijos metais – KGB, kur buvo laikomi, kankinami ir žudomi kovotojai už Lietuvos
+        valstybingumą. Šiuo metu čia veikia Genocido aukų muziejus, pastato fasade iškalti žuvusių
+        rezistentų vardai, šalia pastatytas paminklas – lauko akmenų piramidė.</string>
+    <string name="marsruto_zem">Maršruto žemėlapis</string>
 </resources>

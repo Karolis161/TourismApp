@@ -11,7 +11,6 @@ import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -106,15 +105,10 @@ public class TourismLocationsFragment extends Fragment {
             Toast.makeText(getActivity(), "Sorry, error occurred on preparing locations data.", Toast.LENGTH_SHORT).show();
         }
 
-        //RecyclerView groupRecyclerViewLocations = view.findViewById(R.id.groupRecyclerViewSpots);
-        //groupRecyclerViewLocations.setHasFixedSize(true);
         TourismGroupLocationsAdapter tourismLocationsAdapter = new TourismGroupLocationsAdapter
                 (requireActivity().getApplicationContext(), groupSpotsDataList, this);
         groupRecyclerViewLocations.setAdapter(tourismLocationsAdapter);
         groupRecyclerViewLocations.setLayoutManager(new LinearLayoutManager(requireActivity().getApplicationContext()));
-        //RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(requireActivity().getApplicationContext());
-        //groupRecyclerViewLocations.setLayoutManager(layoutManager);
-        //tourismLocationsAdapter.notifyDataSetChanged();
         return view;
     }
 

@@ -16,7 +16,6 @@ import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.turizmoprograma.R;
-import com.example.turizmoprograma.tourism_locations.TourismGroupLocationsData;
 import com.example.turizmoprograma.tourism_locations.TourismLocationsDB;
 
 import java.util.List;
@@ -43,7 +42,7 @@ public class RoutePlannerAdapter extends RecyclerView.Adapter<RoutePlannerAdapte
     }
 
     @SuppressLint("SetTextI18n")
-    public void onBindViewHolder(@NonNull com.example.turizmoprograma.route_planner.RoutePlannerAdapter.MyViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         RoutePlannerData route = routeDataList.get(position);
         holder.routeName.setText(route.getRouteName());
         holder.routeLength.setText((route.getRouteLength()) + " km");

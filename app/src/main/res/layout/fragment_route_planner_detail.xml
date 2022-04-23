@@ -2,6 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginLeft="10dp"
@@ -15,7 +16,7 @@
         android:layout_marginBottom="20dp">
 
         <TextView
-            android:id="@+id/routeTitle"
+            android:id="@+id/routeName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -23,47 +24,58 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.google.android.gms.maps.MapView
-            android:id="@+id/locationMap"
-            android:layout_width="391dp"
-            android:layout_height="294dp"
-            android:apiKey="@string/map_api_key"
-            android:clickable="true"
-            android:focusable="true"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/routeTitle"
-            tools:ignore="SpeakableTextPresentCheck" />
-
         <TextView
-            android:id="@+id/locationDescription"
+            android:id="@+id/mapName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="@string/marsruto_zem"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/routeMap"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/routeDescription" />
+
+        <fragment
+            android:id="@+id/routeMap"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginStart="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="FragmentTagUsage" />
+
+        <ImageView
+            android:id="@+id/transparent_image"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@android:color/transparent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/routeMap"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/routeImg"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/routeName"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/routeDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:justificationMode="inter_word"
             android:text="@string/location_description"
-            app:layout_constraintTop_toBottomOf="@+id/locationMap"
+            app:layout_constraintTop_toBottomOf="@+id/routeImg"
             tools:layout_editor_absoluteX="0dp"
             tools:targetApi="o" />
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="149dp"
-            android:layout_height="59dp"
-            android:layout_marginStart="60dp"
-            android:layout_marginTop="76dp"
-            android:text="@string/atidaryti_žemėlapyje"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/locationDescription" />
-
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="110dp"
-            android:layout_height="59dp"
-            android:layout_marginTop="76dp"
-            android:layout_marginEnd="60dp"
-            android:text="@string/dalintis"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/locationDescription" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
