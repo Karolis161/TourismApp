@@ -20,6 +20,7 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.example.turizmoprograma.R;
+import com.example.turizmoprograma.recommendations.RecommendationsFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,7 +29,6 @@ public class TourismLocationsFragment extends Fragment {
 
     public static final String TABLE_LOCATIONS = "locations";
     private View view;
-    RecyclerView groupRecyclerViewLocations;
 
     public TourismLocationsFragment() {
     }
@@ -36,7 +36,7 @@ public class TourismLocationsFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_tourism_locations, container, false);
-        groupRecyclerViewLocations = view.findViewById(R.id.groupRecyclerViewSpots);
+        RecyclerView groupRecyclerViewLocations = view.findViewById(R.id.groupRecyclerViewSpots);
 
         List<TourismGroupLocationsData> groupSpotsDataList = new ArrayList<>();
         List<TourismLocationsData> tourismLocationsSen = new ArrayList<>();
@@ -88,12 +88,45 @@ public class TourismLocationsFragment extends Fragment {
                     cursor.moveToNext();
                 }
             }
-            groupSpotsDataList.add(new TourismGroupLocationsData("Popular spots", tourismLocationsSen));
-            groupSpotsDataList.add(new TourismGroupLocationsData("History", tourismLocationsIst));
-            groupSpotsDataList.add(new TourismGroupLocationsData("Museums", tourismLocationsMuz));
-            groupSpotsDataList.add(new TourismGroupLocationsData("Religion", tourismLocationsRelig));
-            groupSpotsDataList.add(new TourismGroupLocationsData("Parks", tourismLocationsPark));
-            groupSpotsDataList.add(new TourismGroupLocationsData("Memorials", tourismLocationsMem));
+            String tag = RecommendationsFragment.savedTag;
+
+            if (tag == null) {
+                groupSpotsDataList.add(new TourismGroupLocationsData("Popular spots", tourismLocationsSen));
+                groupSpotsDataList.add(new TourismGroupLocationsData("History", tourismLocationsIst));
+                groupSpotsDataList.add(new TourismGroupLocationsData("Museums", tourismLocationsMuz));
+                groupSpotsDataList.add(new TourismGroupLocationsData("Religion", tourismLocationsRelig));
+                groupSpotsDataList.add(new TourismGroupLocationsData("Parks", tourismLocationsPark));
+                groupSpotsDataList.add(new TourismGroupLocationsData("Memorials", tourismLocationsMem));
+            } else {
+                if (tag.equals("Visi")) {
+                    groupSpotsDataList.add(new TourismGroupLocationsData("Popular spots", tourismLocationsSen));
+                    groupSpotsDataList.add(new TourismGroupLocationsData("History", tourismLocationsIst));
+                    groupSpotsDataList.add(new TourismGroupLocationsData("Museums", tourismLocationsMuz));
+                    groupSpotsDataList.add(new TourismGroupLocationsData("Religion", tourismLocationsRelig));
+                    groupSpotsDataList.add(new TourismGroupLocationsData("Parks", tourismLocationsPark));
+                    groupSpotsDataList.add(new TourismGroupLocationsData("Memorials", tourismLocationsMem));
+                }
+                if (tag.equals("Istorija")) {
+                    groupSpotsDataList.add(new TourismGroupLocationsData("Popular spots", tourismLocationsSen));
+                    groupSpotsDataList.add(new TourismGroupLocationsData("History", tourismLocationsIst));
+                }
+                if (tag.equals("Muziejai")) {
+                    groupSpotsDataList.add(new TourismGroupLocationsData("Popular spots", tourismLocationsSen));
+                    groupSpotsDataList.add(new TourismGroupLocationsData("Museums", tourismLocationsMuz));
+                }
+                if (tag.equals("Religija")) {
+                    groupSpotsDataList.add(new TourismGroupLocationsData("Popular spots", tourismLocationsSen));
+                    groupSpotsDataList.add(new TourismGroupLocationsData("Religion", tourismLocationsRelig));
+                }
+                if (tag.equals("Parkai")) {
+                    groupSpotsDataList.add(new TourismGroupLocationsData("Popular spots", tourismLocationsSen));
+                    groupSpotsDataList.add(new TourismGroupLocationsData("Parks", tourismLocationsPark));
+                }
+                if (tag.equals("Memorialai")) {
+                    groupSpotsDataList.add(new TourismGroupLocationsData("Popular spots", tourismLocationsSen));
+                    groupSpotsDataList.add(new TourismGroupLocationsData("Memorials", tourismLocationsMem));
+                }
+            }
 
             cursor.close();
             db.close();

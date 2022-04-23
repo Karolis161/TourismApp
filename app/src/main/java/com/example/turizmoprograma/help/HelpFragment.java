@@ -22,12 +22,6 @@ import com.example.turizmoprograma.R;
 public class HelpFragment extends Fragment {
 
     private View view;
-    Button btnCallCentre;
-    Button btnEmailCentre;
-    Button btnFindCentre;
-    Button btnEmailCreator;
-    Button btnEmailCreatorUni;
-    Button btnFindCreatorUni;
 
     public HelpFragment() {
     }
@@ -42,12 +36,12 @@ public class HelpFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstance) {
         view = inflater.inflate(R.layout.fragment_help, container, false);
 
-        btnCallCentre = view.findViewById(R.id.btnCentreCall);
-        btnEmailCentre = view.findViewById(R.id.btnCentreEmail);
-        btnFindCentre = view.findViewById(R.id.btnCentreMap);
-        btnEmailCreator = view.findViewById(R.id.btnCreatorEmail);
-        btnEmailCreatorUni = view.findViewById(R.id.btnUniEmail);
-        btnFindCreatorUni = view.findViewById(R.id.btnUniMap);
+        Button btnCallCentre = view.findViewById(R.id.btnCentreCall);
+        Button btnEmailCentre = view.findViewById(R.id.btnCentreEmail);
+        Button btnFindCentre = view.findViewById(R.id.btnCentreMap);
+        Button btnEmailCreator = view.findViewById(R.id.btnCreatorEmail);
+        Button btnEmailCreatorUni = view.findViewById(R.id.btnUniEmail);
+        Button btnFindCreatorUni = view.findViewById(R.id.btnUniMap);
 
         btnCallCentre.setOnClickListener(view -> {
             String number = "852629660";

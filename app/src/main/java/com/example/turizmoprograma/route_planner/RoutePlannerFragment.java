@@ -30,7 +30,6 @@ public class RoutePlannerFragment extends Fragment {
 
     public static final String TABLE_LOCATIONS = "locations";
     private View view;
-    RecyclerView groupRecyclerViewRoutes;
 
     public RoutePlannerFragment() {
     }
@@ -38,7 +37,7 @@ public class RoutePlannerFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstance) {
         view = inflater.inflate(R.layout.fragment_route_planner, container, false);
-        groupRecyclerViewRoutes = view.findViewById(R.id.groupRecyclerViewRoutes);
+        RecyclerView groupRecyclerViewRoutes = view.findViewById(R.id.groupRecyclerViewRoutes);
 
         List<RoutePlannerGroupData> groupRouteDataList = new ArrayList<>();
         List<RoutePlannerData> route1 = new ArrayList<>();
@@ -57,69 +56,6 @@ public class RoutePlannerFragment extends Fragment {
                 while (!cursor.isAfterLast()) {
 
                     whichCategory = cursor.getString(1);
-
-//                    RoutePlannerData routeData = new RoutePlannerData();
-//
-//                    List<String> routeNames = new ArrayList<>();
-//                    routeNames.add("Maršrutas po istorinius Vilniaus objektus");
-//                    routeNames.add("Maršrutas po Vilniaus parkus");
-//                    routeNames.add("Maršrutas po religinius Vilniaus objektus");
-//                    routeNames.add("Maršrutas po Vilniaus muziejus");
-//                    routeNames.add("Maršrutas po Vilniaus memorialus");
-//
-//                    List<Double> routeLengths = new ArrayList();
-//                    routeLengths.add(2.3);
-//                    routeLengths.add(13.26);
-//                    routeLengths.add(1.24);
-//                    routeLengths.add(3.24);
-//                    routeLengths.add(2.15);
-//
-//                    List<Integer> routeTimes = new ArrayList<>();
-//                    routeTimes.add(30);
-//                    routeTimes.add(60);
-//                    routeTimes.add(20);
-//                    routeTimes.add(45);
-//                    routeTimes.add(25);
-//
-//                    List<Integer> routeImgs = new ArrayList<>();
-//                    routeImgs.add(R.drawable.gediminoprospektasroute);
-//                    routeImgs.add(R.drawable.parkairoute);
-//                    routeImgs.add(R.drawable.baznyciaroute);
-//                    routeImgs.add(R.drawable.muziejairoute);
-//                    routeImgs.add(R.drawable.memorialairoute);
-//
-//                    List<String> routeDescriptions = new ArrayList<>();
-//                    routeDescriptions.add(getResources().getString(R.string.routehistorydesc));
-//                    routeDescriptions.add(getResources().getString(R.string.routeparkdesc));
-//                    routeDescriptions.add(getResources().getString(R.string.routereligiondesc));
-//                    routeDescriptions.add(getResources().getString(R.string.routemuseumsdesc));
-//                    routeDescriptions.add(getResources().getString(R.string.routememorialsdesc));
-//
-//                    for (int i = 0; i <= routeNames.size(); i++) {
-//                        routeData.setRouteName(routeNames.get(i));
-//                        routeData.setRouteLength(routeLengths.get(i));
-//                        routeData.setRouteTime(routeTimes.get(i));
-//                        routeData.setRouteImg(routeImgs.get(i));
-//                        routeData.setRouteDescription(routeDescriptions.get(i));
-//                        if (whichCategory.contains("istorija")) {
-//                            route1.add(routeData);
-//
-//                        }
-//                        if (whichCategory.contains("parkas")) {
-//                            route2.add(routeData);
-//                        }
-//                        if (whichCategory.contains("religija")) {
-//                            route3.add(routeData);
-//                        }
-//                        if (whichCategory.contains("muziejus")) {
-//                            route4.add(routeData);
-//                        }
-//                        if (whichCategory.contains("memorialas")) {
-//                            route5.add(routeData);
-//                        }
-//                        Log.i("Pirmas", String.valueOf(route1.get(1)));
-//                    }
-
 
                     RoutePlannerData routeData = new RoutePlannerData();
                     RoutePlannerData routeData1 = new RoutePlannerData();

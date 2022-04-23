@@ -25,20 +25,6 @@ public class TourismHelperFragment extends Fragment {
 
     private View view;
 
-    ImageButton imgButtonUber;
-    ImageButton imgButtonBooking;
-    ImageButton imgButtonCitybee;
-    ImageButton imgButtonBolt;
-    ImageButton imgButtonAirbnb;
-    ImageButton imgButtonTrafi;
-
-    Button linkButtonVLNWeb;
-    Button linkButtonCovid;
-    Button linkButtonLTGov;
-    Button linkButtonLTTour;
-    Button linkButtonLTReng;
-    Button linkButtonLTAbout;
-
     public TourismHelperFragment() {
     }
 
@@ -52,23 +38,23 @@ public class TourismHelperFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstance) {
         view = inflater.inflate(R.layout.fragment_tourism_helper, container, false);
 
-        imgButtonUber = view.findViewById(R.id.btnUber);
-        imgButtonBooking = view.findViewById(R.id.btnBooking);
-        imgButtonCitybee = view.findViewById(R.id.btnCitybee);
-        imgButtonBolt = view.findViewById(R.id.btnBolt);
-        imgButtonAirbnb = view.findViewById(R.id.btnAirbnb);
-        imgButtonTrafi = view.findViewById(R.id.btnTrafi);
+        ImageButton imgButtonUber = view.findViewById(R.id.btnUber);
+        ImageButton imgButtonBooking = view.findViewById(R.id.btnBooking);
+        ImageButton imgButtonCityBee = view.findViewById(R.id.btnCitybee);
+        ImageButton imgButtonBolt = view.findViewById(R.id.btnBolt);
+        ImageButton imgButtonAirbnb = view.findViewById(R.id.btnAirbnb);
+        ImageButton imgButtonTrafi = view.findViewById(R.id.btnTrafi);
 
-        linkButtonVLNWeb = view.findViewById(R.id.btnVLNWeb);
-        linkButtonCovid = view.findViewById(R.id.btnCovid);
-        linkButtonLTGov = view.findViewById(R.id.btnLTGov);
-        linkButtonLTTour = view.findViewById(R.id.btnLTTour);
-        linkButtonLTReng = view.findViewById(R.id.btnLTReng);
-        linkButtonLTAbout = view.findViewById(R.id.btnLTAbout);
+        Button linkButtonVLNWeb = view.findViewById(R.id.btnVLNWeb);
+        Button linkButtonCovid = view.findViewById(R.id.btnCovid);
+        Button linkButtonLTGov = view.findViewById(R.id.btnLTGov);
+        Button linkButtonLTTour = view.findViewById(R.id.btnLTTour);
+        Button linkButtonLTReng = view.findViewById(R.id.btnLTReng);
+        Button linkButtonLTAbout = view.findViewById(R.id.btnLTAbout);
 
         imgButtonUber.setImageResource(R.drawable.uber1);
         imgButtonBooking.setImageResource(R.drawable.booking1);
-        imgButtonCitybee.setImageResource(R.drawable.citybee1);
+        imgButtonCityBee.setImageResource(R.drawable.citybee1);
         imgButtonBolt.setImageResource(R.drawable.bolt1);
         imgButtonAirbnb.setImageResource(R.drawable.airbnb1);
         imgButtonTrafi.setImageResource(R.drawable.trafi1);
@@ -88,7 +74,7 @@ public class TourismHelperFragment extends Fragment {
             startActivity(intent);
         });
 
-        imgButtonCitybee.setOnClickListener(view -> {
+        imgButtonCityBee.setOnClickListener(view -> {
             intent.setData(Uri.parse("https://play.google.com/store/apps/details?id=com.primeleasing.citybee"));
             intent.setPackage("com.android.vending");
             startActivity(intent);

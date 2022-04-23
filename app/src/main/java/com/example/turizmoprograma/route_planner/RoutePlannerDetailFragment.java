@@ -44,14 +44,11 @@ import java.util.List;
 
 public class RoutePlannerDetailFragment extends Fragment implements OnMapReadyCallback {
 
-    TextView routeName;
-    TextView routeDescription;
-    ImageView routeImg;
-    String name;
+    private String name;
     private View view;
     public static final String TABLE_LOCATIONS = "locations";
-    ScrollView scrollView;
-    ImageView transparentImage;
+    private ScrollView scrollView;
+    private ImageView transparentImage;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -64,9 +61,9 @@ public class RoutePlannerDetailFragment extends Fragment implements OnMapReadyCa
                              Bundle savedInstanceState) {
 
         view = inflater.inflate(R.layout.fragment_route_planner_detail, container, false);
-        routeName = view.findViewById(R.id.routeName);
-        routeDescription = view.findViewById(R.id.routeDescription);
-        routeImg = view.findViewById(R.id.routeImg);
+        TextView routeName = view.findViewById(R.id.routeName);
+        TextView routeDescription = view.findViewById(R.id.routeDescription);
+        ImageView routeImg = view.findViewById(R.id.routeImg);
         scrollView = view.findViewById(R.id.scrollView);
         transparentImage = view.findViewById(R.id.transparent_image);
 

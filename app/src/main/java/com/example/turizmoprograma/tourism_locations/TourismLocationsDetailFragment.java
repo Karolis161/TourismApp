@@ -17,7 +17,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.ScrollView;
 import android.widget.TextView;
 
 import com.example.turizmoprograma.R;
@@ -30,14 +29,8 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 public class TourismLocationsDetailFragment extends Fragment {
-    TextView locationName;
-    TextView locationDescription;
-    ImageView locationImg;
-    MapView mapView;
-    Button btnMap;
-    Button btnShare;
-    String name;
-    double latDest, lngDest;
+    private String name;
+    private double latDest, lngDest;
     private View view;
 
     public TourismLocationsDetailFragment() {
@@ -54,11 +47,11 @@ public class TourismLocationsDetailFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         view = inflater.inflate(R.layout.fragment_tourism_locations_detail, container, false);
-        locationName = view.findViewById(R.id.locationName);
-        locationDescription = view.findViewById(R.id.locationDescription);
-        locationImg = view.findViewById(R.id.locationImg);
-        btnMap = view.findViewById(R.id.btnNav);
-        btnShare = view.findViewById(R.id.btnShare);
+        TextView locationName = view.findViewById(R.id.locationName);
+        TextView locationDescription = view.findViewById(R.id.locationDescription);
+        ImageView locationImg = view.findViewById(R.id.locationImg);
+        Button btnMap = view.findViewById(R.id.btnNav);
+        Button btnShare = view.findViewById(R.id.btnShare);
 
         Bundle bundle = getArguments();
         assert bundle != null;
@@ -70,7 +63,7 @@ public class TourismLocationsDetailFragment extends Fragment {
         lngDest = data.getLng();
         locationImg.setImageResource(data.getImg());
 
-        mapView = view.findViewById(R.id.locationMap);
+        MapView mapView = view.findViewById(R.id.locationMap);
         mapView.onCreate(savedInstanceState);
         mapView.onResume();
         try {

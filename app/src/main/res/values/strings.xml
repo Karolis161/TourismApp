@@ -160,4 +160,7 @@
         valstybingumą. Šiuo metu čia veikia Genocido aukų muziejus, pastato fasade iškalti žuvusių
         rezistentų vardai, šalia pastatytas paminklas – lauko akmenų piramidė.</string>
     <string name="marsruto_zem">Maršruto žemėlapis</string>
+    <string name="name">Vardas</string>
+    <string name="last_name">Pavardė</string>
+    <string name="save">Saugoti</string>
 </resources>
