@@ -19,8 +19,8 @@
                 android:title="@string/route_planner" />
             <item
                 android:id="@+id/option_tourist_locations"
-                android:text="@string/locations"
-                android:title="@string/locations" />
+                android:text="@string/tourist_locations"
+                android:title="@string/tourist_locations" />
             <item
                 android:id="@+id/option_tourism_helper"
                 android:text="@string/helper"

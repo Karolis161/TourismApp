@@ -1,4 +1,4 @@
-package com.example.turizmoprograma.route_planner;
+package com.example.turizmoprograma.route_planner.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -12,10 +12,12 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.turizmoprograma.R;
+import com.example.turizmoprograma.route_planner.dto.RoutePlannerData;
+import com.example.turizmoprograma.route_planner.dto.RoutePlannerGroupData;
 
 import java.util.List;
 
-public class RoutePlannerGroupAdapter extends RecyclerView.Adapter<com.example.turizmoprograma.route_planner.RoutePlannerGroupAdapter.MyViewHolder> {
+public class RoutePlannerGroupAdapter extends RecyclerView.Adapter<RoutePlannerGroupAdapter.MyViewHolder> {
 
     private final Fragment fragment;
     List<RoutePlannerGroupData> groupRoutesDataList;

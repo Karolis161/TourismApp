@@ -1,4 +1,6 @@
-package com.example.turizmoprograma.route_planner;
+package com.example.turizmoprograma.route_planner.dto;
+
+import com.example.turizmoprograma.route_planner.dto.RoutePlannerData;
 
 import java.util.List;
 

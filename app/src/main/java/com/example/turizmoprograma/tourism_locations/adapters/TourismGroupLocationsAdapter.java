@@ -1,4 +1,4 @@
-package com.example.turizmoprograma.tourism_locations;
+package com.example.turizmoprograma.tourism_locations.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -12,6 +12,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.turizmoprograma.R;
+import com.example.turizmoprograma.tourism_locations.dto.TourismGroupLocationsData;
+import com.example.turizmoprograma.tourism_locations.dto.TourismLocationsData;
 
 import java.util.List;
 

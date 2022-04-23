@@ -1,4 +1,4 @@
-package com.example.turizmoprograma.route_planner;
+package com.example.turizmoprograma.route_planner.fragments;
 
 import android.annotation.SuppressLint;
 import android.database.Cursor;
@@ -11,7 +11,6 @@ import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -21,6 +20,9 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.example.turizmoprograma.R;
+import com.example.turizmoprograma.route_planner.adapters.RoutePlannerGroupAdapter;
+import com.example.turizmoprograma.route_planner.dto.RoutePlannerData;
+import com.example.turizmoprograma.route_planner.dto.RoutePlannerGroupData;
 import com.example.turizmoprograma.tourism_locations.TourismLocationsDB;
 
 import java.util.ArrayList;

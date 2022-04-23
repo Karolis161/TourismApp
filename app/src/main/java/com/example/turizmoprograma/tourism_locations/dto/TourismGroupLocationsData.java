@@ -1,4 +1,6 @@
-package com.example.turizmoprograma.tourism_locations;
+package com.example.turizmoprograma.tourism_locations.dto;
+
+import com.example.turizmoprograma.tourism_locations.dto.TourismLocationsData;
 
 import java.util.List;
 

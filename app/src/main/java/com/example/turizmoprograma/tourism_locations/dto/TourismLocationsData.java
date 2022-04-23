@@ -1,4 +1,4 @@
-package com.example.turizmoprograma.tourism_locations;
+package com.example.turizmoprograma.tourism_locations.dto;
 
 import java.io.Serializable;
 

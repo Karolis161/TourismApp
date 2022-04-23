@@ -54,7 +54,7 @@ public class HomeFragment extends Fragment {
 
         if (name != null && lastName != null && !name.equals("") && !lastName.equals("")) {
             textName.setText("Sveiki " + name + " " + lastName);
-            textChoice.setText("Jūs pasirinkote " + tag);
+            textChoice.setText("Jūs pasirinkote: " + tag);
         }
         return view;
     }

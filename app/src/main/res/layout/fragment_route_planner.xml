@@ -7,12 +7,12 @@
     android:layout_marginLeft="10dp"
     android:layout_marginRight="10dp"
     android:fillViewport="true"
-    tools:context=".route_planner.RoutePlannerFragment">
+    tools:context=".route_planner.fragments.RoutePlannerFragment">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context=".tourism_locations.TourismLocationsFragment">
+        tools:context=".tourism_locations.fragments.TourismLocationsFragment">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/groupRecyclerViewRoutes"

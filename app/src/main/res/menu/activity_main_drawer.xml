@@ -11,11 +11,11 @@
         <item
             android:id="@+id/nav_route"
             android:icon="@drawable/route"
-            android:title="@string/route" />
+            android:title="@string/route_planner" />
         <item
             android:id="@+id/nav_locations"
             android:icon="@drawable/location"
-            android:title="@string/locations" />
+            android:title="@string/tourist_locations" />
         <item
             android:id="@+id/nav_map"
             android:icon="@drawable/map"

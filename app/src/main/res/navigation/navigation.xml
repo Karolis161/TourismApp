@@ -35,8 +35,8 @@
 
     <fragment
         android:id="@+id/nav_route"
-        android:name="com.example.turizmoprograma.route_planner.RoutePlannerFragment"
-        android:label="@string/route"
+        android:name="com.example.turizmoprograma.route_planner.fragments.RoutePlannerFragment"
+        android:label="@string/route_planner"
         tools:layout="@layout/fragment_route_planner">
         <action
             android:id="@+id/action_RoutePlannerFragment_to_HomeFragment"
@@ -63,8 +63,8 @@
 
     <fragment
         android:id="@+id/nav_locations"
-        android:name="com.example.turizmoprograma.tourism_locations.TourismLocationsFragment"
-        android:label="@string/locations"
+        android:name="com.example.turizmoprograma.tourism_locations.fragments.TourismLocationsFragment"
+        android:label="@string/tourist_locations"
         tools:layout="@layout/fragment_tourism_locations">
         <action
             android:id="@+id/action_TourismLocationsFragment_to_HomeFragment"
@@ -194,7 +194,7 @@
 
     <fragment
         android:id="@+id/nav_locationDetail"
-        android:name="com.example.turizmoprograma.tourism_locations.TourismLocationsDetailFragment"
+        android:name="com.example.turizmoprograma.tourism_locations.fragments.TourismLocationsDetailFragment"
         android:label="Tourism Location Detail"
         tools:layout="@layout/fragment_tourism_locations_detail">
         <argument
@@ -226,7 +226,7 @@
 
     <fragment
         android:id="@+id/nav_routeDetail"
-        android:name="com.example.turizmoprograma.route_planner.RoutePlannerDetailFragment"
+        android:name="com.example.turizmoprograma.route_planner.fragments.RoutePlannerDetailFragment"
         android:label="Route Planner Detail"
         tools:layout="@layout/fragment_route_planner_detail">
 

@@ -1,4 +1,4 @@
-package com.example.turizmoprograma.route_planner;
+package com.example.turizmoprograma.route_planner.fragments;
 
 import android.annotation.SuppressLint;
 import android.database.Cursor;
@@ -22,6 +22,7 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 
 import com.example.turizmoprograma.R;
+import com.example.turizmoprograma.route_planner.dto.RoutePlannerData;
 import com.example.turizmoprograma.tourism_locations.TourismLocationsDB;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;

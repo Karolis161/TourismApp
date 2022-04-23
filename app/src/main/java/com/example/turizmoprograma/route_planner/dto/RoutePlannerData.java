@@ -1,4 +1,4 @@
-package com.example.turizmoprograma.route_planner;
+package com.example.turizmoprograma.route_planner.dto;
 
 import java.io.Serializable;
 

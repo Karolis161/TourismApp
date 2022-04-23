@@ -1,4 +1,4 @@
-package com.example.turizmoprograma.route_planner;
+package com.example.turizmoprograma.route_planner.adapters;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -16,6 +16,7 @@ import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.turizmoprograma.R;
+import com.example.turizmoprograma.route_planner.dto.RoutePlannerData;
 import com.example.turizmoprograma.tourism_locations.TourismLocationsDB;
 
 import java.util.List;
