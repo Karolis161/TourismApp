@@ -102,7 +102,7 @@ public class RoutePlannerDetailFragment extends Fragment implements OnMapReadyCa
                 while (!cursor.isAfterLast()) {
 
                     GeoApiContext context = new GeoApiContext.Builder()
-                            .apiKey("AIzaSyAOkRRwOjf11Hedh1lzTAYaevUGtAVPtIQ")
+                            .apiKey(getString(R.string.map_api_key))
                             .build();
 
                     List<LatLng> path = new ArrayList();
